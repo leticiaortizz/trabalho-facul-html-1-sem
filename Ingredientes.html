@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+
+    <script src="https://kit.fontawesome.com/185609e68f.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="img/logo.png">
+
+    <link rel="stylesheet" href="css/ingredientes.css" />
+
+    <script>
+        function acumularPesquisa() {
+            var selectbox = document.getElementById("selectbox");
+            var search = document.getElementById("search");
+            search.value += selectbox.value + ", ";
+        }
+    </script>
+
+    <title>Seleção Ingredientes</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img class="imglogo" src="img/chef.png">
+        </div>
+
+        <img class="logotipo" src="img/logotipo.png">
+
+
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="">Selecionar Ingredientes</a></li>
+            <li><a href="Formulario.html">Cadastre-se</a></li>
+        </ul>
+    </nav>
+
+    <h1>Selecione os Ingredientes</h1>
+    <br>
+    <form>
+        
+
+        <label for="selectbox">Selecionar:</label>
+        <select id="selectbox" name="selectbox">
+			<option value=""></option>
+			<option value="Arroz">Arroz</option>
+			<option value="Bacon">Bacon</option>
+            <option value="Bolacha de Leite">Bolacha de Leite</option>
+			<option value="Creme de leite">Creme de leite</option>
+            <option value="Farinha">Farinha</option>
+			<option value="Feijão">Feijão</option>
+			<option value="Frango">Frango</option>
+            <option value="Ketchup">Ketchup</option>
+            <option value="Leite Condensado">Leite Condensado</option>
+			<option value="Limão">Limão</option>
+            <option value="Linguiça">Linguiça</option>
+            <option value="Macarrão">Macarrão</option>
+            <option value="Maionese">Maionese</option>
+            <option value="Molho de tomate">Molho de tomate</option>
+            <option value="Mostarda">Mostarda</option>
+            <option value="Orégano">Oregano</option>
+			<option value="Pão">Pão</option>
+			<option value="pimenta-do-reino">Pimenta-do-reino</option>
+            <option value="Queijo">Queijo</option>
+            
+
+		</select>
+        
+
+        <label for="search">Pesquisar:</label>
+        <input type="text" id="search" name="search"><br><br>
+
+        
+        <center>
+        <button type="button" onclick="acumularPesquisa()">Adicionar</button><br><br>
+        <a class="enviar" href="Receita.html">Enviar</a>  </center>
+
+    </form>
+
+    <footer>
+        <div class=”footer-content”>
+            <p>
+                <center>Todos os direitos reservados. ©</center>
+            </p>
+        </div>
+    </footer>
+</body>
+
+
+</html>

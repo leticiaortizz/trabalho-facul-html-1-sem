@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #da883c;
+    font-family: "Poppins", sans-serif;
+}
+
+nav:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav .logo {
+    float: left;
+    padding-left: 60px;
+}
+
+.imglogo {
+    position: absolute;
+    top: 10px;
+    width: 80px;
+    margin-left: -35px;
+}
+
+.logotipo {
+    width: 220px;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+    top: 10px;
+    list-style: none;
+    position: relative;
+    z-index: 9;
+}
+
+nav ul li {
+    float: left;
+    display: inline-block;
+    background: #da883c;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    color: white;
+    line-height: 70px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    color: #af2900;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul ul li a:hover {
+    box-shadow: none;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid #da883c;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.3s;
+}
+
+nav ul ul ul {
+    border-top: none;
+}
+
+nav ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 150px;
+}
+
+footer {
+    background: #da883c;
+    height: auto;
+    width: 100vw;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    color: #e9e1e1;
+    margin-top: 10px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+div.design {
+    padding-left: 50px;
+}
+
+.foto {
+    width: 800px;
+    padding-top: 20px;
+}
+
+ul {
+    padding-left: 60px;
+}
+
+h2 {
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3 {
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tempo {
+    width: 80px;
+}
+
+.tempo:hover {
+    transform: scale(1.20);
+}
+
+.facil {
+    padding-left: 20px;
+    width: 100px;
+}
+
+.facil:hover {
+    transform: scale(1.20);
+}
+
+.porcao {
+    padding-left: 20px;
+    width: 100px;
+}
+
+.porcao:hover {
+    transform: scale(1.20);
+}
+
+div.infos {
+    position: absolute;
+    margin-top: -310px;
+    margin-left: 550px;
+}
+
+div.ingredientes {
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 880px;
+    margin-top: -740px;
+    background-color: #da883c44;
+    padding: 15px;
+    width: 450px;
+    height: 400px;
+}
+
+.chef {
+    width: 420px;
+    position: absolute;
+    margin-left: 890px;
+    margin-top: -440px;
+}
+
+.chef:hover {
+    transform: scale(1.05);
+}
